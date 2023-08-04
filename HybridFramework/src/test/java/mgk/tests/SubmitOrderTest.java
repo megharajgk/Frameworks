@@ -1,25 +1,15 @@
 package mgk.tests;
 
-import java.io.File;
-import java.io.IOException;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-
 import mgk.testComponents.BaseTest;
-import pageObjects.ProductCatalogue;
 import pageObjects.CartPage;
 import pageObjects.CheckoutPage;
 import pageObjects.ConfirmationPage;
 import pageObjects.OrderPage;
+import pageObjects.ProductCatalogue;
 
 public class SubmitOrderTest extends BaseTest{
 
