@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 04 08:43:49 IST 2023</td>
+<td>Started on:</td><td>Sun Oct 08 12:33:56 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16715 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6962 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,7 +76,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Experience for product search in both Home and Offer page", "Search and Place the order for Products"</td>
+<td title='testRunner.FailedTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.FailedTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Experience for product search in both Home and Offer page", "Search and Place the order for Products"</td>
 <td><div><pre>java.lang.AssertionError: expected [No data] but found [Beetroot]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
@@ -84,40 +84,21 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:655)
 	at org.testng.Assert.assertEquals(Assert.java:665)
-	at stepDefinitions.OfferPageSteps.validate_product_name_in_offers_page_matches_with_landing_page(OfferPageSteps.java:43)
-	at ✽.Validate product name in offers page matches with landing page(file:///D:/Frameworks/CucumberFramework/./src/test/java/features/searchProduct.feature:9)
-</pre></div><a href='#' onClick='toggleBox("stack-trace514368942", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace514368942'><pre>java.lang.AssertionError: expected [No data] but found [Beetroot]
+	at stepDefinitions.OfferPageSteps.validate_product_name_in_offers_page_matches_with_landing_page(OfferPageSteps.java:41)
+	at ✽.Validate product name in offers page matches with landing page(file:///D:/Frameworks/CucumberFramework/src/test/java/features/searchProduct.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace365329607", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace365329607'><pre>java.lang.AssertionError: expected [No data] but found [Beetroot]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:655)
 	at org.testng.Assert.assertEquals(Assert.java:665)
-	at stepDefinitions.OfferPageSteps.validate_product_name_in_offers_page_matches_with_landing_page(OfferPageSteps.java:43)
-	at ✽.Validate product name in offers page matches with landing page(file:///D:/Frameworks/CucumberFramework/./src/test/java/features/searchProduct.feature:9)
+	at stepDefinitions.OfferPageSteps.validate_product_name_in_offers_page_matches_with_landing_page(OfferPageSteps.java:41)
+	at ✽.Validate product name in offers page matches with landing page(file:///D:/Frameworks/CucumberFramework/src/test/java/features/searchProduct.feature:9)
 </pre></div></td>
-<td>12</td>
-<td>testRunner.TestNGTestRunner@3f4faf53</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Experience for product search in both Home and Offer page", "Place the order for Products"</td>
-<td></td>
-<td>13</td>
-<td>testRunner.TestNGTestRunner@3f4faf53</td></tr>
-<tr>
-<td title='testRunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Experience for product search in both Home and Offer page", "Search and Place the order for Products"</td>
-<td></td>
-<td>10</td>
-<td>testRunner.TestNGTestRunner@3f4faf53</td></tr>
+<td>5</td>
+<td>testRunner.FailedTestRunner@3f4faf53</td></tr>
 </table><p>
 </body>
 </html>

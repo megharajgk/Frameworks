@@ -12,8 +12,6 @@ public class ErrorValidationTest extends BaseTest{
 	@Test(groups = {"ErrorHandling"})
 	public void loginErrorValidation() throws Exception
 	{
-		
-		
 		land.loginApp("anshik@gmail.com", "Iamking@00");
 		Assert.assertEquals("Incorrect email password.", land.getErrorMessage());
 	}

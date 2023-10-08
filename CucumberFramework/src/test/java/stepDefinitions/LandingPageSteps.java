@@ -1,17 +1,13 @@
 package stepDefinitions;
 
-
-
 import org.testng.Assert;
 
 import io.cucumber.java.en.*;
 import pageObjects.LandingPage;
 import utils.TestContextSetUp;
 
-
 public class LandingPageSteps {
 	
-
 String prodNameOffer=null;
 public TestContextSetUp setUp;
 public LandingPage land;

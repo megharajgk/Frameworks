@@ -7,9 +7,7 @@ import pageObjects.LandingPage;
 import pageObjects.OfferPage;
 import utils.TestContextSetUp;
 
-
 public class OfferPageSteps {
-
 
 TestContextSetUp setUp;
 

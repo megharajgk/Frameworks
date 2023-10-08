@@ -13,7 +13,7 @@ public class ExtentReportNG {
 		
 		ExtentReports extent=new ExtentReports();
 		extent.attachReporter(repoter);
-		extent.setSystemInfo("Tester", "MGK");
+		extent.setSystemInfo("MGK", "Tester");
 		return extent;
 	}
 }
