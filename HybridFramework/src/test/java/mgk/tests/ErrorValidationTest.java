@@ -12,7 +12,7 @@ public class ErrorValidationTest extends BaseTest{
 	@Test(groups = {"ErrorHandling"})
 	public void loginErrorValidation() throws Exception
 	{
-		land.loginApp("anshik@gmail.com", "Iamking@00");
+		land.loginApp("rmdviratkohli@gmail.com", "Viratkohli@10");
 		Assert.assertEquals("Incorrect email password.", land.getErrorMessage());
 	}
 	
@@ -22,7 +22,7 @@ public class ErrorValidationTest extends BaseTest{
 		String productName="IPHONE 13 PRO";
 		try
 		{
-			ProductCatalogue pc=land.loginApp("anshika@gmail.com", "Iamking@000");
+			ProductCatalogue pc=land.loginApp("rmdviratkohli@gmail.com", "Viratkohli@1");
 			pc.getProductList();
 			pc.addProductToCart(productName);
 			CartPage cartPage=pc.goToCartPage();

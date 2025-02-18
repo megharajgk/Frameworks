@@ -7,13 +7,15 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class ExtentReportNG {
 	public static ExtentReports getReportObject()
 	{
-		ExtentSparkReporter repoter=new ExtentSparkReporter(".//Reports//index.html");
+		String path=System.getProperty("user.dir")+"\\Reports\\TestReport.html";
+		ExtentSparkReporter repoter=new ExtentSparkReporter(path);
 		repoter.config().setReportName("Web Automation Result");
 		repoter.config().setDocumentTitle("Test Results");
 		
 		ExtentReports extent=new ExtentReports();
 		extent.attachReporter(repoter);
 		extent.setSystemInfo("MGK", "Tester");
+		extent.flush();
 		return extent;
 	}
 }

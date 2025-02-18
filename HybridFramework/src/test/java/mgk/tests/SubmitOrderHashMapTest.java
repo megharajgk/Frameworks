@@ -45,7 +45,7 @@ public class SubmitOrderHashMapTest extends BaseTest{
 	public void OrderHistoryTest()
 	{
 		// To verify the ordered product is displaying in Orders page
-		ProductCatalogue pc=land.loginApp("anshika@gmail.com", "Iamking@000");
+		ProductCatalogue pc=land.loginApp("rmdviratkohli@gmail.com", "Viratkohli@1");
 		OrderPage op=pc.goToOrdersPage();
 		Assert.assertTrue(op.verifyOrderDisplay(productName));
 	}
@@ -54,13 +54,13 @@ public class SubmitOrderHashMapTest extends BaseTest{
 	public Object[][] getData()
 	{
 		HashMap<String, String> hm1=new HashMap<String, String>();
-		hm1.put("email", "anshika@gmail.com");
-		hm1.put("password", "Iamking@000");
+		hm1.put("email", "rmdviratkohli@gmail.com");
+		hm1.put("password", "Viratkohli@1");
 		hm1.put("prodName", "ZARA COAT 3");
 		
 		HashMap<String, String> hm2=new HashMap<String, String>();
-		hm2.put("email", "shetty@gmail.com");
-		hm2.put("password", "Iamking@000");
+		hm2.put("email", "rmdrohitsharma@gmail.com");
+		hm2.put("password", "Rohitsharma@2");
 		hm2.put("prodName", "IPHONE 13 PRO");
 		return new Object[][] {{hm1},{hm2}};
 		

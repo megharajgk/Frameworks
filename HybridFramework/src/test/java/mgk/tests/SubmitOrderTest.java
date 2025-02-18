@@ -43,7 +43,7 @@ public class SubmitOrderTest extends BaseTest{
 	public void OrderHistoryTest()
 	{
 		// To verify the ordered product is displaying in Orders page
-		ProductCatalogue pc=land.loginApp("anshika@gmail.com", "Iamking@000");
+		ProductCatalogue pc=land.loginApp("rmdrohitsharma@gmail.com", "Rohitsharma@2");
 		OrderPage op=pc.goToOrdersPage();
 		Assert.assertTrue(op.verifyOrderDisplay(productName));
 	}
@@ -51,7 +51,8 @@ public class SubmitOrderTest extends BaseTest{
 	@DataProvider
 	public Object[][] getData()
 	{
-		return new Object[][] {{"anshika@gmail.com","Iamking@000","ZARA COAT 3"},{"shetty@gmail.com","Iamking@000","IPHONE 13 PRO"}};
+		return new Object[][] {{"anshika@gmail.com","Iamking@000","ZARA COAT 3"},
+			{"shetty@gmail.com","Iamking@000","IPHONE 13 PRO"}};
 	}
 
 	
